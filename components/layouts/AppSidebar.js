@@ -44,28 +44,74 @@ export const AppSidebar = () => {
                     <ul className="nav nav-primary">
                         <li className="nav-item active">
                             <a href="widgets.html">
-                                <i className="fas fa-home"></i>
+                                <i  className="fas fa-home"></i>
                                 <p>Dashboard</p>
                             </a>
                         </li>
-                        
-                        <li className="nav-item">
-                            <a data-toggle="collapse" href="#base">
-                                <i className="fas fa-layer-group"></i>
-                                <p>Master Data</p>
-                                <span className="caret"></span>
+                        <li className="nav-item ">
+                            <a href="widgets.html">
+                                <i className="fas fa-pen"></i>
+                                <p>Latihan Soal</p>
                             </a>
-                            <div className="collapse" id="base">
-                                <ul className="nav nav-collapse">
-                                    <li>
-                                        <a href="/test">
-                                            <span className="sub-item">Ukuran Kertas</span>
-                                        </a>
-                                    </li>
-                                    
-                                </ul>
-                            </div>
                         </li>
+                        <li className="nav-item ">
+                            <a href="widgets.html">
+                                <i className="fas fa-graduation-cap"></i>
+                                <p>Media Belajar</p>
+                            </a>
+                        </li>
+                        <li className="nav-item ">
+                            <a href="widgets.html">
+                                <i className="fas fa-trophy"></i>
+                                <p>Peringkat</p>
+                            </a>
+                        </li>
+                        <li className="nav-item ">
+                            <a href="widgets.html">
+                                <i className="fas fa-newspaper"></i>
+                                <p>Informasi</p>
+                            </a>
+                        </li>
+                        <li className="nav-item ">
+                            <a href="widgets.html">
+                                <i className="fas fa-comments"></i>
+                                <p>Forum Diskusi</p>
+                            </a>
+                        </li>
+                        <li className="nav-item ">
+                            <a href="widgets.html">
+                                <i className="fas fa-file-alt" ></i>
+                                <p>Toefl Prediction</p>
+                            </a>
+                        </li>
+                        <li className="nav-item ">
+                            <a href="widgets.html">
+                                <i className="fas fa-certificate"></i>
+                                <p>Sertifikasi</p>
+                            </a>
+                        </li>
+                        <li className="nav-item ">
+                            <a href="widgets.html">
+                                <i className="fas fa-file"></i>
+                                <p>Compress File</p>
+                            </a>
+                        </li>
+                        <hr></hr>
+                        <li className="nav-item ">
+                            <a href="widgets.html">
+                                <i className="fas fa-comment"></i>
+                                
+                                <p>Complain & Saran</p>
+                            </a>
+                        </li>
+                        <li className="nav-item ">
+                            <a href="widgets.html">
+                                <i className="fas fa-cog"></i>
+                                
+                                <p>Pengaturan</p> 
+                            </a>
+                        </li>
+                        
 
                         
                     </ul>

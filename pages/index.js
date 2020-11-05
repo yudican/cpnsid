@@ -14,9 +14,14 @@ import {
 } from "../redux/actions/countAction";
 import { Chart } from "../components/pages/dashboard/Chart";
 import { SnackBar } from "../components/pages/dashboard/Snackbar";
+import { ChartModal } from "../components/pages/dashboard/ChartModal";
+import { PromoModal } from "../components/pages/dashboard/PromoModal";
+import { DetailModalTryout } from "../components/pages/dashboard/DetailModalTryout";
 
 export class Home extends Component {
+  
   render() {
+    // const [modalOpen, setModalOpen] = React.useState(false);
     // console.log(this.props)
     return (
       <Layout>
@@ -226,6 +231,9 @@ export class Home extends Component {
             </div>
           </div>
           <SnackBar cartCount={1} cartTotal={"50.000"} />
+          <ChartModal/>
+          <PromoModal/>
+          <DetailModalTryout/>
         </div>
       </Layout>
     );
@@ -408,7 +416,7 @@ const CardItemList = ({
               Beli Sekarang
             </button>
             <button className="btn btn-primary btn-sm btn-border w-100">
-              Beli Sekarang
+              Tambahkan ke keranjang
             </button>
           </div>
         )}

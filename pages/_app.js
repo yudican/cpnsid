@@ -3,6 +3,9 @@ import App from 'next/app'
 import { Provider } from 'react-redux'
 import withRedux from "next-redux-wrapper";
 import store from '../redux/store';
+import "../styles/globals.css";
+
+
 
 class MyApp extends App {
   static async getInitialProps({Component, ctx}) {

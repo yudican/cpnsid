@@ -81,6 +81,8 @@ export const CardTwo = () => {
           <button
             className="btn btn-info btn-border btn-sm w-45"
             style={{ fontSize: 12 }}
+            data-target="#detailmodal"
+            data-toggle="modal"
           >
             Lihat Detail
           </button>
