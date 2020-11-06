@@ -1,5 +1,5 @@
 import React from 'react'
-import { color } from "../../../config/color";
+import { color } from "../../../../config/color";
 
 export const ChartModal = () => {
     return (
