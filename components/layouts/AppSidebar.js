@@ -1,7 +1,7 @@
 import React from 'react';
 import { color } from '../../config/color';
-
-export const AppSidebar = () => {
+import Link from 'next/link'
+export const AppSidebar = ({active}) => {
     return(
         <div className="sidebar sidebar-style-2" style={{backgroundColor:color.PRIMARY}}>
             <div className="sidebar-wrapper scrollbar scrollbar-inner">
@@ -42,11 +42,13 @@ export const AppSidebar = () => {
                         </div>
                     </div> */}
                     <ul className="nav nav-primary">
-                        <li className="nav-item active">
-                            <a href="widgets.html">
+                        <li className={`nav-item ${active === 'dashboard' ? 'active' : '' }`}>
+                            <Link href="/"><a>
                                 <i  className="fas fa-home"></i>
                                 <p>Dashboard</p>
                             </a>
+                            </Link>
+                            
                         </li>
                         <li className="nav-item ">
                             <a href="widgets.html">
@@ -54,17 +56,21 @@ export const AppSidebar = () => {
                                 <p>Latihan Soal</p>
                             </a>
                         </li>
-                        <li className="nav-item ">
-                            <a href="widgets.html">
-                                <i className="fas fa-graduation-cap"></i>
-                                <p>Media Belajar</p>
-                            </a>
+                        <li className={`nav-item ${active === 'materi' ? 'active' : '' }`}>
+                            <Link href="/materi">
+                                <a>
+                                    <i className="fas fa-graduation-cap"></i>
+                                    <p>Media Belajar</p>
+                                </a>
+                            </Link>
                         </li>
-                        <li className="nav-item ">
-                            <a href="widgets.html">
-                                <i className="fas fa-trophy"></i>
-                                <p>Peringkat</p>
-                            </a>
+                        <li className={`nav-item ${active === 'peringkat' ? 'active' : '' }`}>
+                            <Link href="/peringkat">
+                                <a>
+                                    <i className="fas fa-trophy"></i>
+                                    <p>Peringkat</p>
+                                </a>
+                            </Link>
                         </li>
                         <li className="nav-item ">
                             <a href="widgets.html">

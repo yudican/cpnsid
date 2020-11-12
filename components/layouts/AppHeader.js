@@ -1,6 +1,9 @@
 import React from 'react';
+import ImageProfile from '../image/ImageProfile'
 
-export const AppHeader = () => {
+export const AppHeader = ({title}) => {
+
+    console.log("title props",title);
     return (
         <>
             <div className="main-header">
@@ -26,7 +29,7 @@ export const AppHeader = () => {
 
                     <div className="container-fluid">
                         <div className="collapse" id="search-nav">
-                            <h3 style={{ fontWeight:'600', fontSize:24 }}>Halo Calon CPNS</h3>
+                            <h3 style={{ fontWeight:'600', fontSize:24 }}>{title}</h3>
                         </div>
                         <ul className="navbar-nav topbar-nav ml-md-auto align-items-center" style={{width:'50%',justifyContent:'flex-end'}}>
                             
@@ -47,7 +50,7 @@ export const AppHeader = () => {
                                             <div className="notif-center">
                                                 <a href="#">
                                                     <div className="notif-img">
-                                                        <img src="assets/img/profile.jpg" alt="Img Profile"/>
+                                                       <ImageProfile/>
                                                     </div>
                                                     <div className="notif-content">
                                                         <span className="subject">Jimmy Denis</span>

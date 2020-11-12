@@ -19,14 +19,18 @@ import { PromoModal } from "../components/pages/dashboard/modal/PromoModal";
 import { DetailModalTryout } from "../components/pages/dashboard/modal/DetailModalTryout";
 import { PromoModalSharing } from "../components/pages/dashboard/modal/PromoModalSharing";
 import { TryoutAktif } from "../components/pages/dashboard/card/TryoutAktif";
+import { UndangTeman }  from '../components/pages/dashboard/modal/UndangTeman';
 
 export class Home extends Component {
   
-  render() {
+  render()
+   {
     // const [modalOpen, setModalOpen] = React.useState(false);
     // console.log(this.props)
+
+    const titleName = "Halo Calon CPNS";
     return (
-      <Layout>
+      <Layout to="dashboard">
         <div class="page-inner mt-2">
           <div className="col-md-12">
             <div class="row mt-2">
@@ -95,7 +99,7 @@ export class Home extends Component {
                         role="tabpanel"
                         aria-labelledby="pills-home-tab"
                       >
-                        <TryoutAktif/>
+                        <TryoutAktif statusBeli="promo"/>
                         <TryoutAktif/>
                       </div>
                       <div
@@ -209,6 +213,7 @@ export class Home extends Component {
           <PromoModal/>
           <DetailModalTryout/>
           <PromoModalSharing/>
+          <UndangTeman/>
         </div>
       </Layout>
     );

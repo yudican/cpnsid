@@ -25,6 +25,14 @@ a {
   list-style: none;
   
 }
+.active-soal {
+  background-color:#36C2CF !important;
+  color: #fff;
+}
+
+.active-soal-number {
+  color : #fff
+}
 
 
 
