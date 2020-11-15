@@ -8,7 +8,7 @@ export default class peringatan extends Component {
     render() {
         
         return (
-            <Layout>
+            <Layout title="Peringatan">
                 <div className="page-inner mt-2">
                     <div className="col md-12">
                        <div className="card">

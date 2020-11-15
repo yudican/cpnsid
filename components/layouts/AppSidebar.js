@@ -50,11 +50,13 @@ export const AppSidebar = ({active}) => {
                             </Link>
                             
                         </li>
-                        <li className="nav-item ">
-                            <a href="widgets.html">
-                                <i className="fas fa-pen"></i>
-                                <p>Latihan Soal</p>
-                            </a>
+                        <li className={`nav-item ${active === 'latihansoal' ? 'active' : '' }`}>
+                            <Link href="/latihansoal">
+                                <a>
+                                    <i className="fas fa-pen"></i>
+                                    <p>Latihan Soal</p>
+                                </a>
+                            </Link>
                         </li>
                         <li className={`nav-item ${active === 'materi' ? 'active' : '' }`}>
                             <Link href="/materi">
@@ -72,29 +74,37 @@ export const AppSidebar = ({active}) => {
                                 </a>
                             </Link>
                         </li>
-                        <li className="nav-item ">
-                            <a href="widgets.html">
-                                <i className="fas fa-newspaper"></i>
-                                <p>Informasi</p>
-                            </a>
+                        <li className={`nav-item ${active === 'informasi' ? 'active' : '' }`}>
+                            <Link href="/informasi">
+                                <a>
+                                    <i className="fas fa-newspaper"></i>
+                                    <p>Informasi</p>
+                                </a>
+                            </Link>
                         </li>
-                        <li className="nav-item ">
-                            <a href="widgets.html">
-                                <i className="fas fa-comments"></i>
-                                <p>Forum Diskusi</p>
-                            </a>
+                        <li className={`nav-item ${active === 'diskusi' ? 'active' : '' }`}>
+                            <Link href="/diskusi">
+                                <a>
+                                    <i className="fas fa-comments"></i>
+                                    <p>Forum Diskusi</p>
+                                </a>
+                            </Link>
                         </li>
-                        <li className="nav-item ">
-                            <a href="widgets.html">
-                                <i className="fas fa-file-alt" ></i>
-                                <p>Toefl Prediction</p>
-                            </a>
+                        <li className={`nav-item ${active === 'toefl' ? 'active' : '' }`}>
+                            <Link href="/toefl">
+                                <a>
+                                    <i className="fas fa-file-alt" ></i>
+                                    <p>Toefl Prediction</p>
+                                </a>
+                            </Link>
                         </li>
-                        <li className="nav-item ">
-                            <a href="widgets.html">
-                                <i className="fas fa-certificate"></i>
-                                <p>Sertifikasi</p>
-                            </a>
+                        <li className={`nav-item ${active === 'sertifikasi' ? 'active' : '' }`}>
+                            <Link href="/sertifikasi">
+                                <a>
+                                    <i className="fas fa-certificate"></i>
+                                    <p>Sertifikasi</p>
+                                </a>
+                            </Link>
                         </li>
                         <li className="nav-item ">
                             <a href="widgets.html">
@@ -103,19 +113,23 @@ export const AppSidebar = ({active}) => {
                             </a>
                         </li>
                         <hr></hr>
-                        <li className="nav-item ">
-                            <a href="widgets.html">
-                                <i className="fas fa-comment"></i>
-                                
-                                <p>Complain & Saran</p>
-                            </a>
+                        <li className={`nav-item ${active === 'komplain' ? 'active' : '' }`}>
+                            <Link href="/komplain">
+                                <a>
+                                    <i className="fas fa-comment"></i>
+                                    
+                                    <p>Complain & Saran</p>
+                                </a>
+                            </Link>
                         </li>
-                        <li className="nav-item ">
-                            <a href="widgets.html">
-                                <i className="fas fa-cog"></i>
-                                
-                                <p>Pengaturan</p> 
-                            </a>
+                        <li className={`nav-item ${active === 'pengaturan' ? 'active' : '' }`}>
+                            <Link href="/pengaturan">
+                                <a>
+                                    <i className="fas fa-cog"></i>
+                                    
+                                    <p>Pengaturan</p> 
+                                </a>
+                            </Link>
                         </li>
                         
 

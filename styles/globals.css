@@ -35,6 +35,16 @@ a {
 }
 
 
+.form-custom input {
+  border: none;
+  margin-left: 20px;
+}
+
+.form-custom .text-muted-input {
+  color : #B2B8CA;
+}
+
+
 
 /* .btn-giveway::after{
   

@@ -1,17 +1,17 @@
 import React , { Component } from 'react'
-import { Materi } from '../components/pages/materi/Materi'
+import { PengaturanHome  } from '../components/pages/pengaturan/PengaturanHome'
 import Layout from '../components/layouts'
 
-export default class materi extends Component {
+export default class pengaturan extends Component {
     
     render(){
 
         return (
             <>
-             <Layout title="Materi" to="materi">
+             <Layout title="Pengaturan" to="pengaturan">
                  <div class="page-inner mt-2">
                      <div class="col-md-12">
-                        <Materi/>
+                       <PengaturanHome/>
                      </div>
                  </div>
              </Layout>

@@ -1,17 +1,17 @@
 import React , { Component } from 'react'
-import { Materi } from '../components/pages/materi/Materi'
+import { ToeflHome } from '../components/pages/toefl/ToeflHome'
 import Layout from '../components/layouts'
 
-export default class materi extends Component {
+export default class toefl extends Component {
     
     render(){
 
         return (
             <>
-             <Layout title="Materi" to="materi">
+             <Layout title="Toefl Prediction/EPT" to="toefl">
                  <div class="page-inner mt-2">
                      <div class="col-md-12">
-                        <Materi/>
+                        <ToeflHome/>
                      </div>
                  </div>
              </Layout>

@@ -11,7 +11,7 @@ class Layout extends Component {
        console.log("props to ", this.props.to)
         return (
             <div className="wrapper">
-                <AppHeader title="Halo Calon CPNS" />
+                <AppHeader titleNav={this.props.title}/>
                 <AppSidebar active={this.props.to}/>
                 <div className="main-panel" style={{backgroundColor:color.GREY}}>
                     <div className="container">

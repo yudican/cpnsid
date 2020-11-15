@@ -1,9 +1,9 @@
 import React from 'react';
 import ImageProfile from '../image/ImageProfile'
 
-export const AppHeader = ({title}) => {
+export const AppHeader = ({titleNav}) => {
 
-    console.log("title props",title);
+    console.log("title props",titleNav);
     return (
         <>
             <div className="main-header">
@@ -29,7 +29,7 @@ export const AppHeader = ({title}) => {
 
                     <div className="container-fluid">
                         <div className="collapse" id="search-nav">
-                            <h3 style={{ fontWeight:'600', fontSize:24 }}>{title}</h3>
+                            <h3 className="text-dark" style={{ fontWeight:'600', fontSize:24 }}>{titleNav}</h3>
                         </div>
                         <ul className="navbar-nav topbar-nav ml-md-auto align-items-center" style={{width:'50%',justifyContent:'flex-end'}}>
                             
