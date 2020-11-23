@@ -106,18 +106,19 @@ export const AppSidebar = ({active}) => {
                                 </a>
                             </Link>
                         </li>
-                        <li className="nav-item ">
-                            <a href="widgets.html">
-                                <i className="fas fa-file"></i>
-                                <p>Compress File</p>
-                            </a>
+                        <li className={`nav-item ${active === 'compress' ? 'active' : '' }`}>
+                            <Link href="/compress">
+                                <a>
+                                    <i className="fas fa-file"></i>
+                                    <p>Compress File</p>
+                                </a>
+                            </Link>
                         </li>
                         <hr></hr>
                         <li className={`nav-item ${active === 'komplain' ? 'active' : '' }`}>
                             <Link href="/komplain">
                                 <a>
-                                    <i className="fas fa-comment"></i>
-                                    
+                                    <i className="fas fa-comment"></i>                                  
                                     <p>Complain & Saran</p>
                                 </a>
                             </Link>
@@ -125,15 +126,11 @@ export const AppSidebar = ({active}) => {
                         <li className={`nav-item ${active === 'pengaturan' ? 'active' : '' }`}>
                             <Link href="/pengaturan">
                                 <a>
-                                    <i className="fas fa-cog"></i>
-                                    
+                                    <i className="fas fa-cog"></i>                                    
                                     <p>Pengaturan</p> 
                                 </a>
                             </Link>
-                        </li>
-                        
-
-                        
+                        </li>                                               
                     </ul>
                 </div>
             </div>

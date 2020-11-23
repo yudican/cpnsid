@@ -75,6 +75,10 @@ export default class MyDocument extends Document {
             type="text/javascript"
             src="/static/assets/js/plugin/datatables/datatables.min.js"
           ></script>
+          <script
+            type="text/javascript"
+            src="/static/assets/js/plugin/dropzone/dropzone.min.js"
+          ></script>
           
         </Head>
         <body style={{ backgroundColor: color.GREY }}>

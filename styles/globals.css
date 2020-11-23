@@ -44,6 +44,12 @@ a {
   color : #B2B8CA;
 }
 
+.btn-tool {
+  width: 240px;
+  height: 74px;
+  border-radius: 15px;
+}
+
 
 
 /* .btn-giveway::after{

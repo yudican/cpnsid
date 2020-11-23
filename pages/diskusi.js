@@ -2,7 +2,7 @@ import React , { Component } from 'react'
 import { DiskusiHome  } from '../components/pages/diskusi/DiskusiHome'
 import Layout from '../components/layouts'
 
-export default class detail_berita extends Component {
+export default class diskusi extends Component {
     
     render(){
 
