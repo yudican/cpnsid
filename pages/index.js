@@ -14,12 +14,23 @@ import {
 } from "../redux/actions/countAction";
 import { Chart } from "../components/pages/dashboard/Chart";
 import { SnackBar } from "../components/pages/dashboard/Snackbar";
+import { ChartModal } from "../components/pages/dashboard/modal/ChartModal";
+import { PromoModal } from "../components/pages/dashboard/modal/PromoModal";
+import { DetailModalTryout } from "../components/pages/dashboard/modal/DetailModalTryout";
+import { PromoModalSharing } from "../components/pages/dashboard/modal/PromoModalSharing";
+import { TryoutAktif } from "../components/pages/dashboard/card/TryoutAktif";
+import { UndangTeman }  from '../components/pages/dashboard/modal/UndangTeman';
 
 export class Home extends Component {
-  render() {
+  
+  render()
+   {
+    // const [modalOpen, setModalOpen] = React.useState(false);
     // console.log(this.props)
+
+    const titleName = "Halo Calon CPNS";
     return (
-      <Layout>
+      <Layout to="dashboard">
         <div class="page-inner mt-2">
           <div className="col-md-12">
             <div class="row mt-2">
@@ -88,36 +99,8 @@ export class Home extends Component {
                         role="tabpanel"
                         aria-labelledby="pills-home-tab"
                       >
-                        <div
-                          style={{
-                            backgroundColor: color.GREY,
-                            padding: 15,
-                            borderRadius: 10,
-                          }}
-                        >
-                          <h4
-                            className={"font-poppins"}
-                            style={{ fontWeight: "bold" }}
-                          >
-                            Tryout 07 SKD
-                          </h4>
-                          <div>
-                            <IconText
-                              icon={"fas fa-calendar"}
-                              style={{ color: color.PURPLE }}
-                              title="29 Jul 2020, 14:00 WIB"
-                              containerStyle={{ marginTop: 10 }}
-                              textStyle={{ fontSize: 14 }}
-                            />
-                            <IconText
-                              badge
-                              style={{ color: color.PURPLE }}
-                              title="Dimulai dalam 4 hari, 3 jam, 2 menit"
-                              containerStyle={{ marginTop: 5 }}
-                              textStyle={{ fontSize: 14 }}
-                            />
-                          </div>
-                        </div>
+                        <TryoutAktif statusBeli="promo"/>
+                        <TryoutAktif/>
                       </div>
                       <div
                         class="tab-pane fade"
@@ -226,6 +209,11 @@ export class Home extends Component {
             </div>
           </div>
           <SnackBar cartCount={1} cartTotal={"50.000"} />
+          <ChartModal/>
+          <PromoModal/>
+          <DetailModalTryout/>
+          <PromoModalSharing/>
+          <UndangTeman/>
         </div>
       </Layout>
     );
@@ -359,6 +347,9 @@ const CardItemList = ({
                 <button
                   className="btn bg-green btn-sm"
                   style={{ paddingTop: 4, paddingBottom: 4, color: "#fff" }}
+                  data-target="#promosharingmodal"
+                  data-toggle = "modal"
+                  type="button"
                 >
                   <i className="fas fa-users pr-1"></i> Promo Sharing
                 </button>
@@ -408,7 +399,7 @@ const CardItemList = ({
               Beli Sekarang
             </button>
             <button className="btn btn-primary btn-sm btn-border w-100">
-              Beli Sekarang
+              Tambahkan ke keranjang
             </button>
           </div>
         )}

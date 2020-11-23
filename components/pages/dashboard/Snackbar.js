@@ -21,6 +21,8 @@ export const SnackBar = ({ cartCount = 0, cartTotal = 0 }) => {
             <button
               className="btn btn-warning btn-sm"
               style={{ paddingTop: 4, paddingBottom: 4 }}
+              data-toggle="modal" 
+              data-target="#chartmodel"
             >
               Bayar Sekarang
             </button>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { color } from '../../config/color';
-
-export const AppSidebar = () => {
+import Link from 'next/link'
+export const AppSidebar = ({active}) => {
     return(
         <div className="sidebar sidebar-style-2" style={{backgroundColor:color.PRIMARY}}>
             <div className="sidebar-wrapper scrollbar scrollbar-inner">
@@ -42,32 +42,95 @@ export const AppSidebar = () => {
                         </div>
                     </div> */}
                     <ul className="nav nav-primary">
-                        <li className="nav-item active">
-                            <a href="widgets.html">
-                                <i className="fas fa-home"></i>
+                        <li className={`nav-item ${active === 'dashboard' ? 'active' : '' }`}>
+                            <Link href="/"><a>
+                                <i  className="fas fa-home"></i>
                                 <p>Dashboard</p>
                             </a>
+                            </Link>
+                            
                         </li>
-                        
-                        <li className="nav-item">
-                            <a data-toggle="collapse" href="#base">
-                                <i className="fas fa-layer-group"></i>
-                                <p>Master Data</p>
-                                <span className="caret"></span>
-                            </a>
-                            <div className="collapse" id="base">
-                                <ul className="nav nav-collapse">
-                                    <li>
-                                        <a href="/test">
-                                            <span className="sub-item">Ukuran Kertas</span>
-                                        </a>
-                                    </li>
-                                    
-                                </ul>
-                            </div>
+                        <li className={`nav-item ${active === 'latihansoal' ? 'active' : '' }`}>
+                            <Link href="/latihansoal">
+                                <a>
+                                    <i className="fas fa-pen"></i>
+                                    <p>Latihan Soal</p>
+                                </a>
+                            </Link>
                         </li>
-
-                        
+                        <li className={`nav-item ${active === 'materi' ? 'active' : '' }`}>
+                            <Link href="/materi">
+                                <a>
+                                    <i className="fas fa-graduation-cap"></i>
+                                    <p>Media Belajar</p>
+                                </a>
+                            </Link>
+                        </li>
+                        <li className={`nav-item ${active === 'peringkat' ? 'active' : '' }`}>
+                            <Link href="/peringkat">
+                                <a>
+                                    <i className="fas fa-trophy"></i>
+                                    <p>Peringkat</p>
+                                </a>
+                            </Link>
+                        </li>
+                        <li className={`nav-item ${active === 'informasi' ? 'active' : '' }`}>
+                            <Link href="/informasi">
+                                <a>
+                                    <i className="fas fa-newspaper"></i>
+                                    <p>Informasi</p>
+                                </a>
+                            </Link>
+                        </li>
+                        <li className={`nav-item ${active === 'diskusi' ? 'active' : '' }`}>
+                            <Link href="/diskusi">
+                                <a>
+                                    <i className="fas fa-comments"></i>
+                                    <p>Forum Diskusi</p>
+                                </a>
+                            </Link>
+                        </li>
+                        <li className={`nav-item ${active === 'toefl' ? 'active' : '' }`}>
+                            <Link href="/toefl">
+                                <a>
+                                    <i className="fas fa-file-alt" ></i>
+                                    <p>Toefl Prediction</p>
+                                </a>
+                            </Link>
+                        </li>
+                        <li className={`nav-item ${active === 'sertifikasi' ? 'active' : '' }`}>
+                            <Link href="/sertifikasi">
+                                <a>
+                                    <i className="fas fa-certificate"></i>
+                                    <p>Sertifikasi</p>
+                                </a>
+                            </Link>
+                        </li>
+                        <li className={`nav-item ${active === 'compress' ? 'active' : '' }`}>
+                            <Link href="/compress">
+                                <a>
+                                    <i className="fas fa-file"></i>
+                                    <p>Compress File</p>
+                                </a>
+                            </Link>
+                        </li>
+                        <hr></hr>
+                        <li className={`nav-item ${active === 'komplain' ? 'active' : '' }`}>
+                            <Link href="/komplain">
+                                <a>
+                                    <i className="fas fa-comment"></i>                                  
+                                    <p>Complain & Saran</p>
+                                </a>
+                            </Link>
+                        </li>
+                        <li className={`nav-item ${active === 'pengaturan' ? 'active' : '' }`}>
+                            <Link href="/pengaturan">
+                                <a>
+                                    <i className="fas fa-cog"></i>                                    
+                                    <p>Pengaturan</p> 
+                                </a>
+                            </Link>
+                        </li>                                               
                     </ul>
                 </div>
             </div>

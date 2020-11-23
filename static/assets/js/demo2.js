@@ -34,3 +34,33 @@ $(document).ready(function(){
 		dots:false
 	});
 })
+
+//alert
+$('#alert_demo_5').click(function(e){
+	swal({
+		title: 'Input Something',
+		html: '<br><input class="form-control" placeholder="Input Something" id="input-field">',
+		content: {
+			element: "input",
+			attributes: {
+				placeholder: "Input Something",
+				type: "text",
+				id: "input-field",
+				className: "form-control"
+			},
+		},
+		buttons: {
+			cancel: {
+				visible: true,
+				className: 'btn btn-danger'
+			},        			
+			confirm: {
+				className : 'btn btn-success'
+			}
+		},
+	}).then(
+	function() {
+		swal("", "You entered : " + $('#input-field').val(), "success");
+	}
+	);
+});

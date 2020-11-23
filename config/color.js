@@ -6,4 +6,5 @@ export const color = {
   PURPLE: "#7B66A9",
   RED: "#ff6868",
   GREEN: "#36C2CF",
+  YELLOW : '#FFB95C'
 };
